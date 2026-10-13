@@ -1,3 +1,5 @@
+XelSSL - a compact TLS 1.2/1.3 client in pure Pascal
+
 MIT License
 
 Copyright (c) 2026 Xelitan
@@ -19,3 +21,25 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-------------------------------------------------------------------------------
+Portions based on the work of other authors
+-------------------------------------------------------------------------------
+
+CryptoLib4Pascal, TlsLib4Pascal, HashLib4Pascal
+  Copyright (c) Ugochukwu Mmaduekwe - https://github.com/Xor-el
+  MIT License (text as above).
+  Used: bitsliced AES (TAesBitSlicedEngine), constant-time GHASH multiplication
+  (TGcmUtilities), SHA-2 constants, NIST curve parameters, CryptoAPI declarations
+  and the list of certificate store paths (Trust.System).
+
+BearSSL aes_ct64
+  Copyright (c) 2016 Thomas Pornin - https://bearssl.org
+  MIT License. (The origin of the bitsliced AES in CryptoLib4Pascal.)
+
+TweetNaCl
+  Daniel J. Bernstein, Bernard van Gastel, Wesley Janssen, Tanja Lange,
+  Peter Schwabe, Sjaak Smetsers - public domain. (Basis of the X25519 code.)
+
+poly1305-donna
+  Andrew Moon - public domain / MIT. (Basis of the 26-bit Poly1305 code.)
