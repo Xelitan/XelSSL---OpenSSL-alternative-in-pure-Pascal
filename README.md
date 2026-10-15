@@ -1,3 +1,5 @@
+Archived, it will be improved and will come back.
+
 # XelSSL — a TLS 1.2 / 1.3 client in pure Pascal
 
 About 5,000 lines, no DLLs and no OpenSSL. It also replaces TlsLib4Pascal + CryptoLib4Pascal (~435,000 lines):
